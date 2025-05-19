@@ -6,7 +6,7 @@ export class NewsItem extends Component {
     return (
       <div className="my-3">
         <div className="card">
-          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left:'90%', zIndex:'1'}}>{source} </span>
+          <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left:'90%', zIndex:'1'}}>{source} </span>
           <img
             src={
               imageUrl? imageUrl: "https://cdn.mos.cms.futurecdn.net/7f4LnhCWK2XCRqEc9dPo3V-1200-80.jpg"
@@ -18,7 +18,7 @@ export class NewsItem extends Component {
             <h5 className="card-title">{title}...</h5>
             <p className="card-text">{description? description: "No description is available."}...</p>
             <p className="card-text">
-              <small class="text-body-secondary">
+              <small className="text-body-secondary">
                 By {author ? author : "Unknown"} on{" "}
                 {new Date(date).toGMTString()}
               </small>
